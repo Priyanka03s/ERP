@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login with Subscription</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="subscription-container">
+        <h1>Select Your Subscription</h1>
+        <div class="subscription-group">
+          <button id="basicSubscriptionBtn">Basic Subscription</button>
+          <button id="premiumSubscriptionBtn">Premium Subscription</button>
+        </div>
+      </div>
+
+      <div class="login-container" style="display: none">
+        <h1>Login</h1>
+        <div class="button-group">
+          <button id="adminBtn">Admin Login</button>
+          <button id="vendorBtn">Vendor Login</button>
+        </div>
+        <form id="loginForm" style="display: none">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit">Login</button>
+          <p id="error-message"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

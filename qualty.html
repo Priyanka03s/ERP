@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quality Department - Duratech Engineering Systems</title>
+    <link rel="stylesheet" href="./css/quality.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Duratech Engineering Systems</h1>
+      <h2>Quality Department</h2>
+    </header>
+
+    <section id="quality-details">
+      <form id="qualityForm">
+        <table>
+          <thead>
+            <tr>
+              <th>Serial No.</th>
+              <th>Quality Inspector Working Time (Hours)</th>
+              <th>Cost Per Hour</th>
+              <th>Labor Charge</th>
+              <th>Total Amount</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="qualityTable">
+            <!-- Rows will be dynamically added here -->
+          </tbody>
+        </table>
+        <button type="button" onclick="requestCredentials(addRow)">
+          Add Component
+        </button>
+      </form>
+    </section>
+
+    <a href="./admin_dashboard.html">
+      <button type="button" class="back">Back</button>
+    </a>
+
+    <!-- JavaScript file linked -->
+    <script src="./js/qualty.js"></script>
+  </body>
+</html>

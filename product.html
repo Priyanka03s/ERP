@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details - Duratech Engineering Systems</title>
+    <link rel="stylesheet" href="./css/product.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Details - Duratech Engineering Systems</h1>
+    </header>
+
+    <main id="product-details">
+      <form id="productForm">
+        <table>
+          <thead>
+            <tr>
+              <th>Serial No.</th>
+              <th>Component Number</th>
+              <th>Quantity</th>
+              <th>Material Name</th>
+              <th>Material Cost</th>
+              <th>Number of Processes</th>
+              <th>Process Details</th>
+              <th>Vendor Info</th>
+              <th>Actions</th>
+              <th class="status">Status</th>
+            </tr>
+          </thead>
+          <tbody id="productTable">
+            <!-- Rows will be dynamically added here -->
+          </tbody>
+        </table>
+        <button type="button" onclick="requestCredentials(addRow)">
+          Add Component
+        </button>
+        <button type="button" onclick="saveDetails()">Save Details</button>
+
+        <a href="./addvendor.html" class="vendor-link"
+          >Vendor Details & Status</a
+        >
+        <a href="./admin_dashboard.html">
+          <button type="button" class="back">Back</button>
+        </a>
+      </form>
+    </main>
+
+    <script src="./js/product.js"></script>
+  </body>
+</html>

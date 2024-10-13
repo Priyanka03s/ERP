@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assembling Department - Duratech Engineering Systems</title>
+    <link rel="stylesheet" href="./css/assembly.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Duratech Engineering Systems</h1>
+      <h2>Assembling Department</h2>
+    </header>
+
+    <section id="assembling-details">
+      <form id="assemblingForm">
+        <table>
+          <thead>
+            <tr>
+              <th>Serial No.</th>
+              <th>Labor Working Hours</th>
+              <th>Labor Cost Per Hour</th>
+              <th>Total Amount</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="assemblingTable">
+            <!-- Rows will be dynamically added here -->
+          </tbody>
+        </table>
+        <button type="button" onclick="requestCredentials(addRow)">
+          Add Assembling
+        </button>
+      </form>
+    </section>
+    <a href="./admin_dashboard.html">
+      <button type="button" class="back">Back</button>
+    </a>
+    <script src="./js/assembly.js"></script>
+  </body>
+</html>

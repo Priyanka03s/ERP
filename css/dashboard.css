@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#company-name {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.dashboard-nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.dashboard-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.dashboard-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dashboard-nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+#content-section {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.content {
+  display: none;
+}
+
+.content h2 {
+  font-size: 28px;
+  color: #007bff;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.addvendor {
+  margin-top: 20px;
+  background-color: rgb(92, 224, 31);
+  margin-left: 20px;
+  border: none;
+  overflow: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 22px;
+  color: white;
+}
+.addvendor:hover {
+  background-color: greenyellow;
+  color: rgb(12, 12, 12);
+}
+.vendor-link {
+  display: inline-block;
+  background-color: #008cba; /* Blue color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none; /* Remove underline */
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 10px 5px; /* Add some margin for spacing */
+}
+
+.vendor-link:hover {
+  background-color: #007bb5; /* Darker blue on hover */
+}
+
+.vendor-link:active {
+  background-color: #006994; /* Even darker blue on click */
+}

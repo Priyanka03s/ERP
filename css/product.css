@@ -1,0 +1,228 @@
+/* General Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Header Styling */
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Input Fields Styling */
+input[type="number"],
+input[type="text"] {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Dropdown (Select) Styling */
+select {
+  width: 120px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Label Styling */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Buttons Styling */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Total Amount and GST Display */
+.totalCost,
+.totalCostWithGst {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Separate the Details Section */
+.details {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Align the input and label elements neatly */
+.details label,
+.details input,
+.details select {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Set container for GST and Total Amount */
+.details p {
+  margin: 10px 0;
+}
+
+/* Button Alignment */
+.actions button {
+  margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  table,
+  th,
+  td {
+    font-size: 12px;
+  }
+
+  input[type="number"],
+  input[type="text"],
+  select {
+    width: 80px;
+  }
+}
+/* General Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Flexbox Container for Process Details Section */
+.process-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px; /* Space between the fields */
+}
+
+/* Flex items: make all input/label pairs behave consistently */
+.process-details div {
+  display: flex;
+  flex-direction: column;
+  width: 30%; /* Adjust width as needed */
+}
+
+.process-details label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input Field Styling */
+input[type="number"],
+input[type="text"],
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* GST and Total Amount display */
+.totalCost,
+.totalCostWithGst {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Button Styling */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .process-details div {
+    width: 100%;
+  }
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+th,
+td {
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+td.process-detail {
+  width: 500px; /* Set your desired width */
+}
+.vendor-link {
+  background-color: #007bff;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.back {
+  margin-top: 20px;
+}
+.status-dot {
+  font-size: 35px;
+  margin-right: 5px;
+}
+
+.green {
+  color: rgb(17, 241, 17);
+}
+
+.yellow {
+  color: yellow;
+}
+
+.red {
+  color: red;
+}

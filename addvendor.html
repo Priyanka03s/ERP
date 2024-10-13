@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Vendor</title>
+    <link rel="stylesheet" href="./css/addvendor.css" />
+  </head>
+  <body>
+    <!-- Vendor Form -->
+    <div id="vendorFormContainer">
+      <h2>Add Vendor Details</h2>
+      <form id="addVendorForm">
+        <table>
+          <tr>
+            <td><label for="vendorCompanyName">Company Name:</label></td>
+            <td><input type="text" id="vendorCompanyName" required /></td>
+          </tr>
+          <tr>
+            <td><label for="componentNumber">Component Number:</label></td>
+            <td><input type="text" id="componentNumber" required /></td>
+          </tr>
+          <tr>
+            <td><label for="materialName">Material Name:</label></td>
+            <td><input type="text" id="materialName" required /></td>
+          </tr>
+          <tr>
+            <td><label for="materialCost">Material Cost:</label></td>
+            <td><input type="number" id="materialCost" required /></td>
+          </tr>
+          <tr>
+            <td><label for="vendorUsername">Vendor Username:</label></td>
+            <td><input type="text" id="vendorUsername" required /></td>
+          </tr>
+          <tr>
+            <td><label for="vendorPassword">Vendor Password:</label></td>
+            <td><input type="password" id="vendorPassword" required /></td>
+          </tr>
+          <tr>
+            <td><label for="vendorPhone">Vendor Phone:</label></td>
+            <td><input type="tel" id="vendorPhone" required /></td>
+          </tr>
+          <tr>
+            <td><label for="vendorAddress">Vendor Address:</label></td>
+            <td><textarea id="vendorAddress" required></textarea></td>
+          </tr>
+        </table>
+        <button type="button" id="saveVendorBtn">Save</button>
+      </form>
+    </div>
+
+    <!-- Admin Authentication Modal -->
+    <div id="adminAuthModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Admin Authentication</h2>
+        <form id="adminAuthForm">
+          <table>
+            <tr>
+              <td><label for="adminUsername">Admin Username:</label></td>
+              <td><input type="text" id="adminUsername" required /></td>
+            </tr>
+            <tr>
+              <td><label for="adminPassword">Admin Password:</label></td>
+              <td><input type="password" id="adminPassword" required /></td>
+            </tr>
+          </table>
+          <button type="button" id="authAdminBtn">Authenticate</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Vendor List -->
+    <div id="vendorListContainer">
+      <h2>Vendor List</h2>
+      <table id="vendorListTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Company Name</th>
+            <th>Component Number</th>
+            <th>Material Name</th>
+            <th>Material Cost</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Status</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Total Time</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button type="button" id="saveVendorListBtn">Save Vendor List</button>
+      <a href="./product.html" class="vendor-link">Back To Product Page</a>
+    </div>
+
+    <script src="./js/addvendor.js"></script>
+  </body>
+</html>
